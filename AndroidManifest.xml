@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.project.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.project.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.project.SearchActivity"
+            android:label="@string/title_activity_search" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.project.MemoryCache"
+            android:label="@string/title_activity_memory_cache" >
+        </activity>
+        <activity
+            android:name="com.example.project.ImageLoader"
+            android:label="@string/title_activity_image_loader" >
+        </activity>
+        <activity
+            android:name="com.example.project.FileCache"
+            android:label="@string/title_activity_file_cache" >
+        </activity>
+        <activity
+            android:name="com.example.project.Utils"
+            android:label="@string/title_activity_utils" >
+        </activity>
+        <activity
+            android:name="com.example.project.Product"
+            android:label="@string/title_activity_product" >
+        </activity>
+        <activity
+            android:name="com.example.project.VideoPlay"
+            android:label="@string/title_activity_video_play" >
+        </activity>
+        <activity
+            android:name="com.example.project.Image"
+            android:label="@string/title_activity_image" >
+        </activity>
+        <activity
+            android:name="com.example.project.VideoActivity"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name="com.example.project.Video"
+            android:label="@string/title_activity_video" >
+        </activity>
+    </application>
+
+</manifest>

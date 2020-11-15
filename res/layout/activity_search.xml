@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android1:id="@+id/video"
+        
+          
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_marginLeft="60dp"
+        android1:layout_marginTop="80dp"
+        android1:text="Video" />
+
+    <ListView
+        android1:id="@+id/listView1"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_marginTop="140dp" >
+
+    </ListView>
+
+    <Button
+        android1:id="@+id/book"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/video"
+        android1:layout_alignBottom="@+id/video"
+        android1:layout_marginLeft="44dp"
+        android1:layout_toRightOf="@+id/video"
+        android1:text="Book" />
+
+    <EditText
+        android1:id="@+id/searchTxt"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/book"
+        android1:layout_alignRight="@+id/book"
+        android1:hint="search here"
+        android1:layout_marginBottom="18dp"
+        android1:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android1:id="@+id/search"
+        style="?android:attr/buttonStyleSmall"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignTop="@+id/searchTxt"
+        android1:layout_toRightOf="@+id/searchTxt"
+        android1:text="Search" />
+ 
+</RelativeLayout>

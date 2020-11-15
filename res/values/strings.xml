@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Project</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_memory_cache">MemoryCache</string>
+    <string name="title_activity_image_loader">ImageLoader</string>
+    <string name="title_activity_file_cache">FileCache</string>
+    <string name="title_activity_utils">Utils</string>
+    <string name="title_activity_product">Product</string>
+    <string name="title_activity_video_play">VideoPlay</string>
+    <string name="title_activity_image">Image</string>
+    <string name="red">RED</string>
+    <string name="title_activity_video">VideoActivity</string>
+
+</resources>
