@@ -21,7 +21,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.ClipData.Item;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -61,20 +63,23 @@ public class SearchActivity extends Activity {
 		lst.setOnItemClickListener(new AdapterView.OnItemClickListener() 
 		{
 
+			@SuppressLint("NewApi")
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				
 				String fetched="";
-				
+				//Item i;
+				//i = (Item) arg0.getAdapter().getItem(arg2);
 				fetched= (String) arg0.getAdapter().getItem(arg2);
 				
-//				fetched=lst.getSelectedItem().toString();
+				//fetched=lst.getSelectedItem().toString();
+				Log.e("fetched",fetched);
 				Toast.makeText(getApplicationContext(), fetched, Toast.LENGTH_LONG).show();
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(getApplicationContext(),VideoPlay.class);
-//				intent=getIntent(SearchActivity.this,VideoPlay.class);
-				intent.putExtra("url", URL+fetched);
+				Intent intent = new Intent(getApplicationContext(),Book.class);
+				//ntent=getIntent(SearchActivity.this,Book.class);
+				intent.putExtra("url", fetched);
 				
 				startActivity(intent);
 			}
@@ -90,6 +95,17 @@ public class SearchActivity extends Activity {
 				
 				new FetchBookDetails(srch).execute();
 				
+			}
+		});
+		book.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				 srch=searchtxt.getText().toString();
+					
+					new FetchBookDetails(srch).execute();
+					
 			}
 		});
 		

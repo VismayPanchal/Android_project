@@ -68,6 +68,15 @@
             android:name="com.example.project.Video"
             android:label="@string/title_activity_video" >
         </activity>
+        <activity
+            android:name="com.example.project.Book"
+            android:label="@string/title_activity_book" >
+        </activity>
+        <activity
+            android:name="com.example.project.ReadBook"
+            android:label="@string/title_activity_read_book" >
+            
+        </activity>
     </application>
 
 </manifest>

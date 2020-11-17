@@ -59,7 +59,9 @@ public class Image extends ArrayAdapter<String>  {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 */
+		
 		itemname = (TextView) convertView.findViewById(R.id.book_name);
 		itemauth = (TextView) convertView.findViewById(R.id.book_auth);
 		itempubl = (TextView) convertView.findViewById(R.id.book_publ);

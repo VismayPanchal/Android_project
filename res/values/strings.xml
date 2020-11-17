@@ -15,5 +15,7 @@
     <string name="title_activity_image">Image</string>
     <string name="red">RED</string>
     <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_book">Book</string>
+    <string name="title_activity_read_book">ReadBook</string>
 
 </resources>
